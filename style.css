@@ -1,0 +1,25 @@
+h1, h2 {
+  font-family: Lato;
+}
+
+.outer {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  border: 1px solid gray;
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+.inner {
+  height: 100%;
+  background-color: lightgray; 
+}
+
+.completion {
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+}
