@@ -17,7 +17,6 @@ let intervalId = -1;
 let progress = 0;
 
 function getProgress() {
-  // const progress = Math.floor(Math.random() * Math.floor(100));
   progress += 10;
   return progress;
 }
@@ -27,6 +26,7 @@ function startProgress() {
   document.getElementById('completion').innerHTML = percent + '%';
   document.getElementById('inner').style.width = percent + '%';
   if (percent === 100) {
+    progress = 0;
     clearInterval(intervalId);
     document.getElementById('completion').innerHTML = 'completed';
   }
